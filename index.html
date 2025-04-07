@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Beginner Fitness Tracker</h1>
+
+    <div class="container">
+        <div id="todays-workout" class="card">
+            <h2>Today's Focus</h2>
+            <p id="workout-day-name">Loading...</p>
+            <ul id="workout-exercises">
+                <!-- Exercises will be loaded here by JavaScript -->
+            </ul>
+        </div>
+
+        <div id="logging-section" class="card">
+            <h2>Log Today's Workout</h2>
+            <p>Did you complete the session for <strong id="log-date">today</strong>?</p>
+            <textarea id="workout-notes" placeholder="Add any notes (e.g., 'Squats felt good', 'Walked faster today', 'A bit sore')"></textarea>
+            <button id="log-button">Log Workout Completed</button>
+            <p id="log-confirmation" class="confirmation"></p>
+        </div>
+
+        <div id="history-log" class="card">
+            <h2>Workout History</h2>
+            <ul id="history-list">
+                <!-- History will be loaded here -->
+                <li>No workouts logged yet.</li>
+            </ul>
+             <button id="reset-button">Reset All Data</button>
+             <p class="warning">Warning: Reset removes all saved progress!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
